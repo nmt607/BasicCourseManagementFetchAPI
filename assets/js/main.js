@@ -1,7 +1,7 @@
 var courseAPI = "http://localhost:3000/courses"
 
 function start() {
-    getCourse(renderCourse) //gọi hàm để xử lý dữ liệu    
+    getCourse(renderCourse) 
     handleCreateCourse()
 
 }
@@ -102,7 +102,6 @@ function handleUpdateCourse(id) {
     var courseDesc = courseItem.querySelector('.course__item-desc')
     courseDesc.setAttribute("contenteditable", "true")
 }
-
 function handleSubmitCourse(id) {
     var courseItem = document.querySelector(`.course__item[data-id="${id}"]`)
     var courseName = courseItem.querySelector('.course__item-title')
